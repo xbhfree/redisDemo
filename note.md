@@ -80,3 +80,8 @@
 10. Stream  流
 
     * 作用：消息队列
+
+## redis命令
+
+1. 官网英文：https://redis.io/commands
+2. 中文:http://www.redis.cn/commands.html
