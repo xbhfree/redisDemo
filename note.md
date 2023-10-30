@@ -85,3 +85,19 @@
 
 1. 官网英文：https://redis.io/commands
 2. 中文:http://www.redis.cn/commands.html
+
+* 常用命令：
+  1. get key             获取值
+  2. set key value    设置值
+  3. del key              删除值
+  4. unlink  key        异步删除值，仅仅将key从keyspace删除，真正的删除会在后续异步执行
+  5. keys *               查询所有key
+  6. exists key         判断key是否存在，存在返回1
+  7. type key           判断值的类型
+  8. ttl key               查看还有多少秒过期，-1永不过期，-2已过期
+  9. expire key 秒    设置过期时间
+  10. move key dbindex【0-15】将当前数据库的key移动到指定的数据库db中
+  11. select dbindex 切换数据库【0-15】。默认为0
+  12. dbsize              查看当前数据库的key数量
+  13. flushdb             清空当前数据库
+  14. flushall              清空所有数据库
